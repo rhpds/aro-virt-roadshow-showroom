@@ -1,13 +1,13 @@
 ---
 name: modules
-title: Experience OpenShift Virtualization
+title: Experience OpenShift Virtualization (ARO)
 version: master
 nav:
 - modules/ROOT/nav.adoc
 
 asciidoc:
   attributes:
-    lab_name: Experience OpenShift Virtualization
+    lab_name: Experience OpenShift Virtualization (ARO)
     release-version: master
     page-pagination: true
   page-links:
