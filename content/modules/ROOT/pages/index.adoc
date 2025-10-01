@@ -10,7 +10,7 @@ In this event we will explore many common management activities that virtualizat
 
 == Who Will Benefit Most from attending a Roadshow?
 
-*Virtual Machine Administrators* -- Those responsible for day to day management of virtual guests in OpenShift Virtualization. These users will often find themselves responsible for provisioning virtual guests, and day to day management of the guests, and the applications running within.
+*Virtual Machine Administrators* -- Those responsible for day to day management of virtual machines in OpenShift Virtualization. These users will often find themselves responsible for provisioning virtual machines, and day to day management of the virtual machines, and the applications running within.
 
 *Virtual Infrastructure Administrators* -- Those responsible for the physical infrastructure hosting the OpenShift Virtualization solution. These users will be responsible for physical hardware, storage, and networking changes to the environment, that will affect the day to day operations of the running virtual machines.
 
