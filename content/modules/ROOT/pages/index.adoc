@@ -89,7 +89,7 @@ A full feature breakdown across all OpenShift editions can be found in the https
 
 == Next steps
 
-If you would like to learn more about OpenShift Virtualization, please visit the https://www.redhat.com/en/technologies/cloud-computing/openshift/virtualization[landing page^], review the https://docs.redhat.com/en/documentation/openshift_container_platform/4.19/html/virtualization/about[documentation^], enjoy one of our https://www.redhat.com/en/interactive-experiences#virtualization[interactive experiences^], or view some of our demo videos on https://www.youtube.com/playlist?list=PLaR6Rq6Z4IqeQeTosfoFzTyE_QmWZW6n_[YouTube^].
+If you would like to learn more about OpenShift Virtualization, please visit the https://www.redhat.com/en/technologies/cloud-computing/openshift/virtualization[landing page^], review the https://docs.redhat.com/en/documentation/openshift_container_platform/4.18/html/virtualization/about[documentation^], enjoy one of our https://www.redhat.com/en/interactive-experiences#virtualization[interactive experiences^], or view some of our demo videos on https://www.youtube.com/playlist?list=PLaR6Rq6Z4IqeQeTosfoFzTyE_QmWZW6n_[YouTube^].
 
 == Requirements for the Lab Environment
 
