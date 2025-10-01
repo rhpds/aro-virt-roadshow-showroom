@@ -50,7 +50,7 @@ image::2025_spring/module-01-intro/04_Tree_View.png[link=self, window=blank, wid
 
 . Lets explore this page for a few moments: notice that this view is divided into 3 columns, the left-side management menu, the central column for organization of VM-based projects, and then the virtual machine view.
 
-. The left menu is the main control for Virtualization integrated functions in OpenShift. We can see virtualization related items like the Catalog, Templates and InstanceTypes to build VMs from, and the menus to configure Storage and Netoworking for virtual machines.
+. The left menu is the main control for Virtualization integrated functions in OpenShift. We can see virtualization related items like the Catalog, Templates and InstanceTypes to build VMs from, and the menus to configure Storage and Networking for virtual machines.
 +
 image::2025_spring/module-01-intro/05_Left_Menu.png[link=self, window=blank, width=100%]
 
