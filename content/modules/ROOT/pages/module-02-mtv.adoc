@@ -142,7 +142,7 @@ Please fill in your migration plan with the following values:
 * *Network map*: Pod Networking
 * *Storage map*: ocs-storagecluster-ceph-rbd
 +
-NOTE: In some cases both the Network and Storage maps will automatically detect the Networks and Datastores that the discovered virtual machines currently make use of on the source provider. If not, you will need to create those mappings and ensure that they align withe the values above on the OpenShift side.
+NOTE: In some cases both the Network and Storage maps will automatically detect the Networks and Datastores that the discovered virtual machines currently make use of on the source provider. If not, you will need to create those mappings and ensure that they align with the values above on the OpenShift side.
 
 . Click the *Create migration plan* button.
 +
