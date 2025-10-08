@@ -284,7 +284,7 @@ image::2025_spring/module-09-networking/22_UDN_Fedora_Console.png[link=self, win
 
 == Summary
 
-In this module, you explored working with physical networks and connecting Virtual Machines (VMs) directly to an existing network. By attaching VMs directly to a physical network administrators can directly access the VMs while also enabling the VMs to connect to specialized networks, such as storage or administration networks.
+In this module, you explored working with physical networks and connecting Virtual Machines (VMs) directly to an existing network. By attaching VMs directly to a physical network, administrators can directly access the VMs while also enabling the VMs to connect to specialized networks, such as storage or administration networks.
 
 User-defined networks provide cluster administrators and end users with highly customizable network configuration options and a much more flexible experience for managing both primary and secondary network types. 
 
