@@ -2,7 +2,7 @@
 
 == Introduction
 
-Pre-configured Red Hat virtual machine templates are listed under *Virtualization* on the *Templates* page. These templates are available for different versions of Red Hat Enterprise Linux, Fedora, CentOS, Microsoft Windows Desktop, and Microsoft Windows Server editions. Each Red Hat associated virtual machine template is preconfigured with an operating system image (boot source), the default settings for the operating system, the flavor (CPU and memory), and the workload type (server). The templates for other operating systems do not include OS images, but are preconfigured as recommended for their operating system. 
+Pre-configured Red Hat virtual machine templates are listed under *Virtualization* on the *Templates* page. These templates are available for different versions of Red Hat Enterprise Linux, Fedora, CentOS, Microsoft Windows Desktop, and Microsoft Windows Server editions. Each Red Hat associated virtual machine template is preconfigured with an operating system image (boot source), the default settings for the operating system, the flavor (CPU and memory), and the workload type (server). The templates for other operating systems do not include OS images, but are preconfigured as recommended for their operating system.
 
 The *Templates* page displays four types of virtual machine templates:
 
@@ -116,7 +116,7 @@ image::2025_spring/module-07-tempinst/15_MariaDB_Login.png[link=self, window=bla
 
 In this segment of our lab, we will install Microsoft Windows Server 2019 using an ISO hosted on a web server. This represents one way to install an operating system to a virtual machine that takes advantage of the ability to source disks from many locations, including a web server, object storage, or other persistent volumes in the cluster.
 
-This process can be streamlined after the initial operating system installation by creating a cloned root disk from a sysprepped virtual machine to use with other templates. 
+This process can be streamlined after the initial operating system installation by creating a cloned root disk from a sysprepped virtual machine to use with other templates.
 
 NOTE: The specific process for preparing the guest operating system to be used as a template will vary, be sure to follow your organization's guidelines and requirements when preparing a template OS.
 
@@ -146,7 +146,7 @@ image::2025_spring/module-07-tempinst/17_Windows_2k19_Dialog.png[link=self, wind
 +
 image::2025_spring/module-07-tempinst/18_Windows_2k19_Parameters.png[link=self, window=blank, width=100%]
 
-. On the *Customize and create VirtualMachine* screen, click on the edit pencil by the *Boot mode* option. 
+. On the *Customize and create VirtualMachine* screen, click on the edit pencil by the *Boot mode* option.
 +
 image::2025_spring/module-07-tempinst/19_Boot_Mode.png[link=self, window=blank, width=100%]
 
@@ -329,7 +329,7 @@ image::2025_spring/module-07-tempinst/27_Stop_Button.png[link=self, window=blank
 
 . With the machine powered down we want to make a clone of the root volume that we can use for future Windows template-based installs, without having to run through the customization process each time.
 
-. On the left-side menu, click on *Storage* and then *PersistentVolumeClaims* to see a list of PVCs available in the *vmexamples-{user}* namespace. 
+. On the left-side menu, click on *Storage* and then *PersistentVolumeClaims* to see a list of PVCs available in the *vmexamples-{user}* namespace.
 
 . Find the *win-sysprep* PVC created with our installation, and using the three-dot menu on the right select *Clone PVC*.
 +
@@ -359,7 +359,9 @@ image::2025_spring/module-07-tempinst/32_Windows_Template_Running.png[link=self,
 [[instance_types]]
 == Introduction to Instance Types
 
-In order to simplify the deployment process for virtual machines, starting with OpenShift 4.14 the default configuration mechanism was changed to emphasize the use of *Instance Types*. An instance type is a reusable object where you can define resources and characteristics to apply to a new VM. You can define custom instance types or use the variety that are included when you install OpenShift Virtualization when provisioning your own VM. This is much more akin to what users experience when using a self-service catalog in popular cloud providers.
+An instance type is a reusable object where you can define resources and characteristics to apply to a new VM.
+You can define custom instance types or use the variety that are included when you install OpenShift Virtualization when provisioning your own VM.
+This is much more akin to what users experience when using a self-service catalog in popular cloud providers.
 
 This section explores provisioning a VM using an instance type.
 
@@ -375,7 +377,12 @@ image::2025_spring/module-07-tempinst/34_Volume_Boot.png[link=self, window=blank
 +
 image::2025_spring/module-07-tempinst/35_Select_RHEL9.png[link=self, window=blank, width=100%]
 
-. Next you can select the instance type you would like to use. There are Red Hat provided instance types by default, or you can create your own for your specific use case. If you hover over a provided instance type you can see a description of its intended use.
+. Next you can select the instance type you would like to use.
+There are Red Hat provided instance types by default, or you can create your own for your specific use case.
+If you hover over a provided instance type you can see a description of its intended use.
++
+NOTE: You can create a similar instance type taxonomy to Azure, if you so choose.
+For example, Ds* for general purpose, Es* for memory optimized, etc.)
 +
 image::2025_spring/module-07-tempinst/36_Select_InstanceType.png[link=self, window=blank, width=100%]
 +

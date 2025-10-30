@@ -1,6 +1,6 @@
 ---
 site:
-  title: Experience Red Hat OpenShift Virtualization (ARO)
+  title: Experience OpenShift Virtualization on Microsoft Azure Red Hat OpenShift
   start_page: modules::index.adoc
 
 content:
