@@ -377,7 +377,12 @@ image::2025_spring/module-07-tempinst/34_Volume_Boot.png[link=self, window=blank
 +
 image::2025_spring/module-07-tempinst/35_Select_RHEL9.png[link=self, window=blank, width=100%]
 
-. Next you can select the instance type you would like to use. There are Red Hat provided instance types by default, or you can create your own for your specific use case. If you hover over a provided instance type you can see a description of its intended use.
+. Next you can select the instance type you would like to use.
+There are Red Hat provided instance types by default, or you can create your own for your specific use case.
+If you hover over a provided instance type you can see a description of its intended use.
++
+NOTE: You can create a similar instance type taxonomy to Azure, if you so choose.
+For example, Ds* for general purpose, Es* for memory optimized, etc.)
 +
 image::2025_spring/module-07-tempinst/36_Select_InstanceType.png[link=self, window=blank, width=100%]
 +
