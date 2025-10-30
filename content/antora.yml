@@ -1,13 +1,13 @@
 ---
 name: modules
-title: Experience OpenShift Virtualization (ARO)
+title: Experience OpenShift Virtualization on Microsoft Azure Red Hat OpenShift
 version: master
 nav:
 - modules/ROOT/nav.adoc
 
 asciidoc:
   attributes:
-    lab_name: Experience OpenShift Virtualization (ARO)
+    lab_name: Experience OpenShift Virtualization on Microsoft Azure Red Hat OpenShift
     release-version: master
     page-pagination: true
   page-links:

@@ -1,6 +1,10 @@
 
 image::2025_spring/conclusion/00_Thank_You.png[link=self, window=blank, width=100%]
 
+By completing this lab, you’ve seen how OpenShift Virtualization on Azure Red Hat OpenShift (ARO) brings VMs onto a Kubernetes-based platform and sets a clear path from migration to modernization.
+You created and migrated VMs with the Migration Toolkit for Virtualization (including advanced options and hooks), explored storage fundamentals with PVCs, snapshots, clones, and performed VM-aware backup and restore with OADP.
+You also accelerated repeatable provisioning using Templates and InstanceTypes, then executed Day-2 operations by exposing VM-hosted apps through Services and Routes—showing how VM workloads can participate in the same cloud-native workflows as containers.
+
 We hope you have enjoyed {lab_name} and learning more about *OpenShift Virtualization* and how it can be a useful tool for both the import and management of legacy virtual machines, as well as a stepping stone on the path of application modernization.
 
 [key_takeaways]
@@ -30,22 +34,9 @@ Click the link https://www.redhat.com/en/resources/15-reasons-adopt-openshift-vi
 
 image::2025_spring/conclusion/01_Ebook.png[link=self, window=blank, width=50%]
 
-=== Red Hat Learning Services: DO317 Managing Virtual Machines with Red Hat OpenShift Virtualization
-
-* Skills required to create, access, and manage VMs on OpenShift clusters.
-* Skills required to control usage and access of cpu, memory, storage, and networking resources from VMs using the same Kubernetes features that would also control usage and access to these resources for containers.
-* Sample architectures to manage High Availability (HA) of VMs using standard Kubernetes features and extensions from OpenShift Virtualization.
-* Strategies to connect VMs on OpenShift to data center services outside of their OpenShift cluster, such as storage and databases.
-* Strategies to migrate VMs from compatible hypervisors to OpenShift Virtualization by using the Migration Toolkit for Virtualization operator.
-
-Click the link https://www.redhat.com/en/services/training/managing-virtual-machines-red-hat-openshift-virtualization-exam[here^] or scan the QR code below to learn more:
-
-
-image::2025_spring/conclusion/02_DO317_Training.png[link=self, window=blank, width=50%]
-
 === Virtualization Migration Assessment
 
-* A two-week onsite interactive workshop and follow-up report. 
+* A two-week onsite interactive workshop and follow-up report.
 * Experienced Red Hat architects run a short series of onsite workshops to help develop your migration journey.
 * They provide an extensive review of your virtualization environment and it's current integrations including: networking, storage, security, backup, and disaster recovery.
 * You recieve a VMA report with a tailored proposal for your complete migration incluing high-level recommendations and design considerations.
@@ -54,4 +45,3 @@ image::2025_spring/conclusion/02_DO317_Training.png[link=self, window=blank, wid
 Click the link https://www.redhat.com/en/resources/virtualization-migration-assessment-datasheet[here^] or scan the QR code below to learn more:
 
 image::2025_spring/conclusion/03_VMA_QR.png[link=self, window=blank, width=50%]
-
