@@ -57,7 +57,9 @@ This includes the ability to connect to and manage those VMs using Kubernetes-na
 == Why switch from a traditional VM platform?
 
 **Adopt cloud-native development and/or cloud-native operations:**
-Red Hat OpenShift helps your team build applications with speed, agility, confidence, and choice. Code in production mode, anywhere you choose to build. Get back to doing work that matters.
+Azure Red Hat OpenShift helps your team build applications with speed, agility, confidence, and choice.
+Code in production mode, anywhere you choose to build.
+Get back to doing work that matters.
 
 **Complete app dev stack:**
 Red Hat OpenShift Dev Spaces (formerly Red Hat CodeReady Workspaces), Runtimes, Integration and Process Automation, Serverless, Pipelines, and more with security throughout.
