@@ -337,10 +337,10 @@ image::2025_spring/module-07-tempinst/28_Storage_PVC.png[link=self, window=blank
 
 . On the menu that pops up, fill in the following options, then click the *Clone* button:
 * *Name*: windows-2k19-sysprep-template
-* *Access mode*:  Shared access (RWX)
-* *StorageClass*: ocs-external-storagecluster-ceph-rbd-immediate
+* *Access mode*:  Shared access (RWX) 
+* *StorageClass*: ocs-storagecluster-ceph-rbd-virtualization 
 +
-image::2025_spring/module-07-tempinst/29_Clone_Menu.png[link=self, window=blank, width=100%]
+image::2025_spring/module-07-tempinst/29_Clone_Menu_v2.png[link=self, window=blank, width=100%]
 
 . Once this is saved, you can use it to quickly create Windows VMs in the future.
 
