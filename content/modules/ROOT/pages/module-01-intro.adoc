@@ -99,7 +99,7 @@ image::2025_spring/module-01-intro/12_Create_VM_Button.png[link=self, window=bla
 
 . You will be taken to the *Catalog* screen, where a number of tiles will appear showing the available pre-defined VM templates.
 +
-Reviewing the list of available templates you’ll notice that some have a blue badge which indicates _Source available_. These are templates which are using automatically downloaded and stored template source disks. 
+Reviewing the list of available templates you’ll notice that some have a blue badge which indicates _Source available_. These are templates which are using automatically downloaded and stored template source disks.
 +
 If you were deploying in your own environment where you can customize the options available, you can choose to modify the availability of these boot sources by default, and/or remove these source disks, in favor of creating custom disks for your organization's needs.
 +
@@ -115,18 +115,18 @@ image::2025_spring/module-01-intro/15_Create_VM_Quick_Name.png[link=self, window
 
 . We will return to our tree view and see information about our new VM in the virtual machine overview column. Notice also that we now see our *vmexamples-{user}* project listed in the center column as it contains a VM, and that it is highlighted within the project.
 +
-If we watch closely we can see the VM Status switch from *Provisioning* to *Starting* and finally *Running* in the virtual machine overview column when it is ready. 
+If we watch closely we can see the VM Status switch from *Provisioning* to *Starting* and finally *Running* in the virtual machine overview column when it is ready.
 +
 During this time, the storage provider has cloned the template disk so that it can be used by the newly created virtual machine. The amount of time this takes can vary based on the storage provider being used to create the boot disk, and the current load on the system.
 +
 image::2025_spring/module-01-intro/16_Fedora_Running.png[link=self, window=blank, width=100%]
 
-. Once the virtual machine is running we can do some further exploration of the *Overview* page in the right side column.  
+. Once the virtual machine is running we can do some further exploration of the *Overview* page in the right side column.
 +
-* *Details*: This tile shows us information about our VM, including it's name, status, creation time, OS, virtual resources, and the template from which it was created. It also contains a minature VNC terminal, and the ability to launch a fullscreen web console.
+* *Details*: This tile shows us information about our VM, including its name, status, creation time, OS, virtual resources, and the template from which it was created. It also contains a minature VNC terminal, and the ability to launch a fullscreen web console.
 * *General*: This tile shows us information specific to OpenShift, including the Namespace (Project), instance name, and Kubernetes pod where the guest is running.
 * *Snapshots*: This tile gives us information about any existing snapshots, and also has the button to quickly create a snapshot.
-* *Network*: This tile gives us the IP address of the virtual machine on the software-defined network (SDN) and it's internal hostname. If no advanced networks are defined, VMs are automatically attached to the pod network. Later in this lab we will explore advanced networking options, and how to customize connectivity for VMs.
+* *Network*: This tile gives us the IP address of the virtual machine on the software-defined network (SDN) and its internal hostname. If no advanced networks are defined, VMs are automatically attached to the pod network. Later in this lab we will explore advanced networking options, and how to customize connectivity for VMs.
 * *Utilization*: This tile gives us an overview of the resources currently in use by this virtual machine, including CPU, Memory, Storage, and Network throughput.
 +
 image::2025_spring/module-01-intro/17_Fedora_Details.png[link=self, window=blank, width=100%]
@@ -214,7 +214,7 @@ image::2025_spring/module-01-intro/27_VM_Actions_Paused.png[link=self, window=bl
 [[live_migrate]]
 == Live Migrate a Virtual Machine
 
-In this section, we will migrate the VM from one OpenShift node to another without shutting down the VM. Live migration requires *ReadWriteMany* (RWX) storage so that the VM disks can be mounted on both the source and destination nodes at the same time. OpenShift Virtualization, unlike other virtualization solutions that you may be familiar with, does not use monolithic datastores mounted to each cluster member that hold many VM disks for many different VMs. Instead, each VM disk is stored in its own volume that is only mounted when and where it's needed.
+In this section, we will migrate the VM from one OpenShift node to another without shutting down the VM. Live migration requires *ReadWriteMany* (RWX) storage so that the VM disks can be mounted on both the source and destination nodes at the same time. OpenShift Virtualization, unlike other virtualization solutions that you may be familiar with, does not use monolithic datastores mounted to each cluster member that hold many VM disks for many different VMs. Instead, each VM disk is stored in its own volume that is only mounted when and where it is needed.
 
 . To see the physical node that the virtual machine is running on, click on the *Pod* name _virt-launcher-fedora01-uuid_ found under the *General* tile on the *Overview* page.
 +
@@ -224,13 +224,13 @@ image::2025_spring/module-01-intro/28_Pod_Name.png[link=self, window=blank, widt
 +
 image::2025_spring/module-01-intro/29_Pod_Details_Node.png[link=self, window=blank, width=100%]
 
-. Click the back button in your browser to return to the *Overview* page. 
+. Click the back button in your browser to return to the *Overview* page.
 
 . Using the *Actions* menu, select the option for *Migration* -> *Compute*.
 +
 image::2025_spring/module-01-intro/30_VM_Dialog_Migrate.png[link=self, window=blank, width=100%]
 
-. After a few seconds, the VM will change the status to *Migrating*, and you can follow it's progress. 
+. After a few seconds, the VM will change the status to *Migrating*, and you can follow its progress.
 +
 image::2025_spring/module-01-intro/31_VM_Migrating.png[link=self, window=blank, width=100%]
 

@@ -84,7 +84,7 @@ If you would like to learn more about OpenShift Virtualization, please visit the
 
 * Participant needs to have their own computer with a web browser and internet access.
 * Chromium based browsers are recommended as some copy/paste functions don't work in Firefox for the time being.
-* Remote access console uses the US keyboard layout by default, so it's good to know where special characters reside for other country's layouts, or to use the copy/paste function in a supported browser.
+* Remote access console uses the US keyboard layout by default, so it is good to know where special characters reside for other country's layouts, or to use the copy/paste function in a supported browser.
 
 === Credentials for the OpenShift Console
 

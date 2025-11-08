@@ -9,7 +9,7 @@ As mentioned in the previous section, all virtual machines are attached to the O
 
 However, it is also possible for virtual machines to connect directly to one or more physical networks, such as untagged network or VLANs, when needed. This is in addition to the SDN, which means that, for example, the administrator can connect to the VM from an external IP address and VMs can connect directly using a Layer2 network.
 
-At a high level, this is done by configuring the host networking, such as a Linux bridge. This workshop segment will walk through the next step in that process, creating a network attachment definition to allow VMs to connect to that bridge and, therefore, directly to the physical network. 
+At a high level, this is done by configuring the host networking, such as a Linux bridge. This workshop segment will walk through the next step in that process, creating a network attachment definition to allow VMs to connect to that bridge and, therefore, directly to the physical network.
 
 NOTE: The OpenShift environment has already been configured with a Linux Bridge on each compute node your virtual machines will connect to, thus allowing for easy connectivity with/from outside network resources.
 
@@ -30,7 +30,7 @@ image::2025_spring/module-09-networking/02_NodeNetworkState_Info.png[link=self, 
 +
 image::2025_spring/module-09-networking/03_NodeNetworkConfigurationPolicy_List.png[link=self, window=blank, width=100%]
 
-. Select *br-flat* to get information 
+. Select *br-flat* to get information
 +
 image::2025_spring/module-09-networking/04_NodeNetworkConfigurationPolicy_Info.png[link=self, window=blank, width=100%]
 
@@ -108,15 +108,15 @@ image::2025_spring/module-09-networking/10_VM_Network_Attach.png[link=self, wind
 +
 NOTE: Because this is a bridge connecting to the external network, we don't need to rely on any OpenShift features or capabilities to enable access, such as masquerade (NAT) for the virtual machines using the network. As a result, *type* should be *Bridge* here.
 
-. Use the *Actions* menu or the *Play* button to start the VM, and switch to the *Console* tab to watch it boot up. 
+. Use the *Actions* menu or the *Play* button to start the VM, and switch to the *Console* tab to watch it boot up.
 +
 image::2025_spring/module-09-networking/11_VM_Network_Startup.png[]
 +
-The *enp2s0* interface obtains an IP address from the flat network (*192.168.64.0/18*). That network has a DHCP server providing IPs to that network. 
+The *enp2s0* interface obtains an IP address from the flat network (*192.168.64.0/18*). That network has a DHCP server providing IPs to that network.
 +
 image::2025_spring/module-09-networking/12_VM_Network_Console.png[link=self, window=blank, width=100%]
 
-. Repeat the actions to attach the fedora02 VM to the same *flatnetwork* network. 
+. Repeat the actions to attach the fedora02 VM to the same *flatnetwork* network.
 
 . Use the *ping* command in the console to demonstrate direct communication between your two VMs (fedora01 and fedora02).
 +
@@ -184,7 +184,7 @@ image::2025_spring/module-09-networking/16_UDN_Form.png[link=self, window=blank,
 +
 image::2025_spring/module-09-networking/17_UDN_Created.png[link=self, window=blank, width=100%]
 +
-* The Default name when it's created using the form is *primary-udn*.
+* The Default name when it is created using the form is *primary-udn*.
 * By default is Layer 2 (the only Layer supported at this moment for OpenShift Virtualization).
 * The Role is primary (Virtual Machines can only use, at this moment, primary networks).
 * A Network Attachment Definition is created automatically.
@@ -272,7 +272,7 @@ image::2025_spring/module-09-networking/20_Create_VM_YAML.png[link=self, window=
 +
 image::2025_spring/module-09-networking/21_UDN_Network_Tile.png[link=self, window=blank, width=100%]
 
-. Switch to the Console tab and login to the VM using the provided guest credentials. 
+. Switch to the Console tab and login to the VM using the provided guest credentials.
 +
 image::2025_spring/module-09-networking/22_UDN_Fedora_Console.png[link=self, window=blank, width=100%]
 +
@@ -286,6 +286,4 @@ image::2025_spring/module-09-networking/22_UDN_Fedora_Console.png[link=self, win
 
 In this module, you explored working with physical networks and connecting Virtual Machines (VMs) directly to an existing network. By attaching VMs directly to a physical network, administrators can directly access the VMs while also enabling the VMs to connect to specialized networks, such as storage or administration networks.
 
-User-defined networks provide cluster administrators and end users with highly customizable network configuration options and a much more flexible experience for managing both primary and secondary network types. 
-
-
+User-defined networks provide cluster administrators and end users with highly customizable network configuration options and a much more flexible experience for managing both primary and secondary network types.

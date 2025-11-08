@@ -26,11 +26,11 @@ In this portion of the lab, we will make use of OADP to perform a virtual machin
 [[review_operator]]
 == Review the OADP Operator
 
-. Navigate to the Administrator perspective once again, and in the left menu click on *Operators* and then *Installed Operators*.  Ensure that the project *oadp-{user}* is selected. 
+. Navigate to the Administrator perspective once again, and in the left menu click on *Operators* and then *Installed Operators*.  Ensure that the project *oadp-{user}* is selected.
 +
 image::2025_summer/module-05-bcdr/00_Left_Menu.png[link=self, window=blank, width=100%]
 
-. Click on the operator to see it's details.
+. Click on the operator to see its details.
 
 . Review the *Provided APIs* available. In this module, the *Backup* and *Restore* functions will be used.
 +
@@ -155,7 +155,7 @@ image::2025_spring/module-05-bcdr/12_Create_Restore_YAML.png[link=self, window=b
 +
 image::2025_summer/module-05-bcdr/13_Restore_Completed.png[link=self, window=blank, width=100%]
 
-. Navigate back to *Virtualization* and click  *Virtual Machines* in the left-side menu and confirm that the *fedora02* virtual machine was restored (in the *vmexamples-{user}* project). You can see it's *Created* value should be a quite short time ago.
+. Navigate back to *Virtualization* and click  *Virtual Machines* in the left-side menu and confirm that the *fedora02* virtual machine was restored (in the *vmexamples-{user}* project). You can see its *Created* value should be a quite short time ago.
 +
 image::2025_spring/module-05-bcdr/14_VM_Restored.png[link=self, window=blank, width=100%]
 

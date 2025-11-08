@@ -89,7 +89,7 @@ image::2025_spring/module-02-mtv/04_vSphere_Datastore.png[link=self, window=blan
 
 Now that we have completed our review of VMware vSphere and the virtual machines that reside there, you may close the window and return to your OpenShift web console.
 
-NOTE: The *Migration Toolkit for Virtualization (MTV)* is officially a separate tool from OpenShift Virtualization, and cannot be accessed from the *Virtualization* perspective. 
+NOTE: The *Migration Toolkit for Virtualization (MTV)* is officially a separate tool from OpenShift Virtualization, and cannot be accessed from the *Virtualization* perspective.
 
 . In the left-side menu, click on *Virtualization* and from the dropdown select *Administrator*.
 +
@@ -121,7 +121,7 @@ image::2025_summer/module-02-mtv/08_VMware_Source_Provider.png[link=self, window
 
 . The page will update, you will see the a list of the virtual machines in the environment that your user account *{user}* has access to.
 +
-image::2025_summer/module-02-mtv/09_VM_List.png[link=self, window=blank, width=100%] 
+image::2025_summer/module-02-mtv/09_VM_List.png[link=self, window=blank, width=100%]
 
 . In the *Select virtual machines* section, click to select the three VMs you would like to move:
 
@@ -168,7 +168,7 @@ image::2025_summer/module-02-mtv/15_VMs_Migrating.png[link=self, window=blank, w
 +
 image::2025_summer/module-02-mtv/16_VMs_Migrating_Details.png[link=self, window=blank, width=100%]
 
-. You can click the drop-down arrow next to the name of each VM being migrated to get additional details about the stages of the migration process. Click on the arrow next to *database-{user}* to expand it's details. 
+. You can click the drop-down arrow next to the name of each VM being migrated to get additional details about the stages of the migration process. Click on the arrow next to *database-{user}* to expand its details.
 +
 image::2025_summer/module-02-mtv/17_VM_Migration_Stages.png[link=self, window=blank, width=100%]
 +
@@ -219,7 +219,7 @@ Check out the interactive demo below to see examples of both examples in action.
 
 While the default migration type for the Migration Toolkit for Virtualization is that of a cold migration, requiring the source virtual machine be powered down through the entire migration window, there are many organizations with valuable workloads that cannot sustain a long period of downtime to perform a virtual machine migration. For these types of workloads the Migration Toolkit for Virtualization also supports warm migrations.
 
-The warm migration process is achieved by taking advantage of Changed Block Tracking (CBT) technology on the source hypervisor, which is often used for backup and disaster recovery operations to reduce the amount of data that is transferred over the wire during an operation. Once CBT is enabled on a virtual machine, snapshots are taken of the guest at regular intervals to keep a record of changes on the VM disk. When it's time to migrate the VM, an initial copy of the guest is transferred while it is still running. This allows for a large amount of machine data to be transferred while the machine is still operational with no down time. When an outage window can be scheduled, the Migration Toolkit for Virtualization triggers a cutover which powers down the guest, and transfers the changed CBT snapshot data, requiring a much more brief downtime for the VM.
+The warm migration process is achieved by taking advantage of Changed Block Tracking (CBT) technology on the source hypervisor, which is often used for backup and disaster recovery operations to reduce the amount of data that is transferred over the wire during an operation. Once CBT is enabled on a virtual machine, snapshots are taken of the guest at regular intervals to keep a record of changes on the VM disk. When it is time to migrate the VM, an initial copy of the guest is transferred while it is still running. This allows for a large amount of machine data to be transferred while the machine is still operational with no down time. When an outage window can be scheduled, the Migration Toolkit for Virtualization triggers a cutover which powers down the guest, and transfers the changed CBT snapshot data, requiring a much more brief downtime for the VM.
 
 .The steps of the demo include the following:
 * We will explore the running Windows and Linux virtual machines on our source hypervisor.
